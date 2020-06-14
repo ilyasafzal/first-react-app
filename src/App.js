@@ -5,8 +5,7 @@ import './App.css';
 function App() {
   return (
     <div> 
-HELLO  WORLD  : I AM ILYAS 
-     WHAT ARE WANT    
+HELLO  WORLD  : I AM ILYAS AFZAL    
     </div>
   );
 }
