@@ -7,7 +7,6 @@ name: react ap deploy
 on:
   push:
     branches: [ master ]
-  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,18 +25,15 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
     version: 12
-    
      - name: installing  yarn
        uses: Borales/actions-yarn@v2.3.0
        with:
          # Yarn command
-         cmd: install
-         
-     - name: CREAT BUILD
+         cmd: install   
+      - name: CREAT BUILD
         run: yarn build
-       
-    - name: installing surge
+     - name: installing surge
        run: npm install -g surge
        
-    - name: deploing on surge 
-      run:  surge ./build app-app.surge.sh --token ${{secrets.ZINDA_BAD}}
+      - name: deploing on surge 
+        run:  surge./build app-app.surge.sh --token ${{secrets.ZINDA_BAD}}
