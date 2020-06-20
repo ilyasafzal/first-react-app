@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-
+import Subjects from './subjects.js';
 function App() {
   return (
     <div> 
-                 HELLO  WORLD : I AM ILYAS AFZAL :    
+    <subjects />
     </div>
   );
 }
